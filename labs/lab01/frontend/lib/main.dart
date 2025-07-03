@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
       home: const MyHomePage(),
@@ -63,12 +63,8 @@ class MyHomePage extends StatelessWidget {
             Center(
               child: SingleChildScrollView(
                 padding: EdgeInsets.all(16.0),
-                child: ProfileCard(
-                  name: "John Doe",
-                  email: "john.doe@example.com",
-                  age: 28,
-                  avatarUrl: "https://randomuser.me/api/portraits/men/1.jpg",
-                ),
+                // TODO: change to ProfileCard
+                child: SizedBox.shrink(),
               ),
             ),
             CounterApp(),
